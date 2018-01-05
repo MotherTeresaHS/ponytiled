@@ -384,7 +384,7 @@ function M.new(data, dir)
   end
 
   local function rightToLeft(a,b)
-    return (a.x or 0) + (a.width or 0) * 0.5 > (b.x or 0) + (b.width or 0) * 0.5
+    return (a.x or 0) + (a.strokeWidth or 0) * 0.5 > (b.x or 0) + (b.strokeWidth or 0) * 0.5
   end
 
   local function upToDown(a,b)
